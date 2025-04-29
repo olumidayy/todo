@@ -21,7 +21,9 @@ share [mkPersist sqlSettings, mkMigrate "migrateAll"] [persistLowerCase|
 Todo
     title Text
     done  Bool
-    deriving Show
-|]
+    deriving Show Generic
 
-deriving instance Generic Todo
+User
+    username Text
+    deriving Show Generic
+|]
